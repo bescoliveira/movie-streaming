@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+  align-self: center;
+}
+
+h2 {
+  margin-bottom: 8px;
+  align-self: center;
+}
+
+.yellow {
+  color: #ffb703;
+}
+
+.container {
+  padding: 36px 0;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section__description--wrapper {
+  display: flex;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.section__description--img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 50%;
+}
+
+.section__description--title {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.section__description--para {
+  font-size: 20px;
+}
+
+.section__title {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  color: #ffd000;
+  padding-bottom: 36px;
+}
+
+.section__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+/*
+
+NAV
+
+*/
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  min-height: 15vh;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-right: 32px;
+}
+
+.nav__link {
+  padding-right: 48px;
+  color: white;
+  font-weight: 600;
+}
+
+.logo {
+  width: 100%;
+  max-width: 100px;
+  margin: 8px 0 8px 32px;
+}
+
+.btn__contact {
+  background-color: #e50914;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px;
+}
+
+.btn__contact:hover {
+  background-color: #b20710;
+}
+.btn__contact:active {
+background-color: #800008;
+  transform: scale(0.98);
+}
+
+/*
+
+HEADER
+
+*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  min-height: 85vh;
+}
+
+.tv__glow {
+  background: radial-gradient(circle at right, #1d2b53 0%, #0a0a0c 80%);
+}
+
+.header__img--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 85vh;
+}
+
+.header__img {
+  width: 100%;
+  max-width: 50vw;
+}
+
+.header__description--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 40%;
+}
+
+.header__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.header__description--title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.header__description--sub-title {
+  text-align: center;
+  padding-bottom: 36px;
+}
+
+.btn__header {
+  background-color: #e50914;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 16px 24px;
+  align-self: center;
+}
+
+.btn__header:hover {
+  background-color: #b20710;
+}
+
+.btn__header:active {
+  background-color: #800008;
+  transform: scale(0.98);
+}
+
+/*
+
+RELEASES
+
+*/
+
+#classics {
+  display: flex;
+  align-items: center;
+  background-color: rgba(10, 10, 12);
+}
+
+.releases__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.releases__img,
+.classics__img {
+  width: 100%;
+  max-width: 60%;
+}
+
+/*
+
+CLASSICS
+
+*/
+
+#releases {
+  display: flex;
+  align-items: center;
+  background-color: rgba(14, 14, 17);
+}
+
+.classics__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(6, 6, 8, 0.8);
+  backdrop-filter: blur(4px);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 40px;
+}
+
+.row__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo--img {
+  width: 100px;
+}
+
+.footer__link,
+.footer__copyright {
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer__list {
+  margin: 20px 0 24px 0;
+}
+
+.footer__link {
+  padding: 0 8px;
+}
