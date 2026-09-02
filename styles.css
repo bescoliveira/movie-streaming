@@ -181,10 +181,14 @@ nav {
   transform-origin: left;
 }
 
+.nav__logo {
+  display: flex;
+  margin-left: 32px;
+}
+
 .logo {
-  width: 100%;
-  max-width: 200px;
-  margin: 8px 0 8px 32px;
+  width: 140px;
+  display: block;
 }
 
 .btn__contact {
@@ -682,6 +686,10 @@ SMALLER SCREENS
     font-size: 30px;
   }
 
+  .logo {
+    width: 110px;
+  }
+
   header {
     flex-direction: column;
     padding: 40px 24px;
@@ -733,6 +741,10 @@ SMALLER SCREENS
 
   .classics__row .section__description--wrapper {
     flex-direction: column-reverse;
+  }
+
+  .movie-card {
+    width: calc((100% - 24px) / 2);
   }
 }
 
