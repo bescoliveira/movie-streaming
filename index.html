@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/69b0841b9c.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+    <script src="burguer.js" defer></script>
     <title>PopCorner</title>
   </head>
   <body>
@@ -13,10 +15,29 @@
         <div class="nav__container">
           <img src="./assets/popcorner__logo.png" alt="" class="logo" />
           <ul class="nav__links">
-            <li><a href="#" class="nav__link">Home</a></li>
-            <li><a href="#" class="nav__link">Find your movie</a></li>
+            <li><a href="/index.html" class="nav__link">Home</a></li>
+            <li><a href="/find.html" class="nav__link">Find your movie</a></li>
             <li><a href="#" class="btn__contact">CONTACT</a></li>
           </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="/find.html" class="menu__link" onclick="closeMenu()">Find your movie</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <header class="tv__glow">
@@ -30,7 +51,7 @@
               FIND YOUR FAVORITE MOVIE WITH
               <span class="yellow">POPCORNER</span>
             </h2>
-            <a href="" class="btn__header">WATCH A MOVIE</a>
+            <a href="/find.html" class="btn__primary">WATCH A MOVIE</a>
           </div>
         </div>
       </header>
@@ -50,6 +71,7 @@
                   Discover the latest movies and shows, with new titles added
                   every week for you to enjoy from the comfort of your home.
                 </p>
+                <a href="/find.html" class="btn__primary section__btn">TAKE ME THERE</a>
               </div>
               <div class="section__description--img">
                 <img src="./assets/releases.png" alt="" class="releases__img">
@@ -72,6 +94,7 @@
                   Rediscover iconic movies and unforgettable stories that have
                   stood the test of time and are always worth watching again.
                 </p>
+                <a href="/find.html" class="btn__primary section__btn">TAKE ME THERE</a>
               </div>
             </div>
           </div>
@@ -89,7 +112,7 @@
         </a>
         <div class="footer__list">
           <a href="#landing" class="footer__link">Home</a>
-          <a class="footer__link">Find your movie</a>
+          <a href="/find.html" class="footer__link">Find your movie</a>
           <a class="footer__link no-cursor">Contact</a>
         </div>
         <div class="footer__copyright">Copyright &copy; 2026 PopCorner</div>
