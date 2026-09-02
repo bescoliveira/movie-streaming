@@ -117,6 +117,12 @@ h2 {
   transform: scale(0.98);
 }
 
+.home__landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /*
 
 NAV
@@ -140,7 +146,7 @@ nav {
   width: 100%;
   background-color: black;
   color: white;
-  min-height: 15vh;
+  padding: 12px 0;
 }
 
 .nav__links {
@@ -483,7 +489,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 0 16px;
-  min-height: 85vh;
+  flex: 1;
 }
 
 .tv__glow {
@@ -673,6 +679,7 @@ SMALLER SCREENS
 
   .btn__menu {
     display: block;
+    font-size: 30px;
   }
 
   header {
